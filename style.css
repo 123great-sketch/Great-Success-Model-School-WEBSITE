@@ -683,11 +683,19 @@ footer h1{
 @media (max-width: 900px) {
     /* NAVIGATION */
 
+    body{
+        margin: 0;
+        padding: 0;
+        color: lightgray;
+        overflow-x: hidden;
+        width: 210vh;
+    }
+
     .back-vid{
         position: fixed;
         top: 0;
         left: 0;
-        width: 100vw;
+        width: 330vw;
         height: 500vh;
         object-fit: cover;
         z-index: -1;
@@ -695,6 +703,17 @@ footer h1{
         background-position: center;
     }
     
+    .scroll-down{
+        height: 50px;
+        width: 30px;
+        border: 2px solid lightgray;
+        position: absolute;
+        left: 150%;
+        bottom: 8%;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 0 15px rgba(211, 211, 211, 0.477);
+    }
   
     .menu-icon {
       display: block;
@@ -720,6 +739,7 @@ footer h1{
       left: 0;
       margin-top: 130px;
       width: 100%;
+      margin-left: 90%;
     }
   
     .hero-info h1 {
@@ -746,11 +766,11 @@ footer h1{
         justify-content: flex-start;
         position: relative;
         margin-top: 130px;
-        width: 28%;
-        margin-bottom: 10%;
-        margin-left:1%;
+        width: 80%;
+        margin-bottom: 30%;
+        margin-left:12%;
         overflow: hidden;
-        height: 490vh;
+        height: 250vh;
         border:1px solid gray;
         background-color: #000020b7;
         border-radius: 20px;
@@ -758,7 +778,20 @@ footer h1{
     }
     .Academics-section h1{
         font-size: 30px;
-        margin-left: 7px;
+        margin-left: 2px;
+    }
+
+    .Academics h1{
+        margin-left: 38%;
+    }
+    .Curriculum h1{
+        margin-left: 38%;
+    }
+    .assessment h1{
+        margin-left: 38%;
+    }
+    .excellence h1{
+        margin-left: 38%;
     }
 
     .class-available{
@@ -786,12 +819,12 @@ footer h1{
         padding: 20px;
         justify-content: center;
         position: relative;
-        margin-bottom: 10%;
+        margin-bottom: 30%;
         margin-top: 130px;
-        width: 28%;
-        margin-left: -17.5%;
+        width: 80%;
+        margin-left: -7%;
         overflow: hidden;
-        height: 480vh;
+        height: 230vh;
         border:1px solid gray;
         background-color: #000000af;
         border-radius: 20px;
@@ -806,11 +839,11 @@ footer h1{
         justify-content: center;
         position: relative;
         margin-top: 130px;
-        width: 28%;
-        margin-bottom: 10%;
-        margin-left: 1%;
+        width: 80%;
+        margin-bottom: 30%;
+        margin-left: 12%;
         overflow: hidden;
-        height: 340vh;
+        height: 200vh;
         border:1px solid gray;
         background-color: #000000af;
         border-radius: 20px;
@@ -829,11 +862,11 @@ footer h1{
         justify-content: center;
         position: relative;
         margin-top: 130px;
-        width: 28%;
-        margin-bottom: 10%;
-        margin-left: 1%;
+        width: 80%;
+        margin-bottom: 30%;
+        margin-left: 12%;
         overflow: hidden;
-        height: 250vh;
+        height: 100vh;
         border:1px solid gray;
         background-color: #000000af;
         border-radius: 20px;
@@ -856,10 +889,10 @@ footer h1{
         justify-content: center;
         position: relative;
         margin-top: 130px;
-        width: 28%;
-        margin-left: 1%;
+        width: 80%;
+        margin-left: 12%;
         margin-top: 10%;
-        margin-bottom: 10%;
+        margin-bottom: 30%;
         overflow: hidden;
         height: 40vh;
         border:1px solid gray;
@@ -869,7 +902,7 @@ footer h1{
     }
 
     .contact-section{
-        width: 28%;
+        width: 100%;
         height: 150vh;
         margin-top: 80px;
         display: flex;
@@ -924,7 +957,7 @@ footer h1{
         display: flex;
         position: relative;
         top: 0;
-        width: 30%;
+        width: 100%;
         right: 2%;
         left: 0;
         align-items: center;
@@ -945,11 +978,11 @@ footer h1{
         box-shadow: 0 0 10px #727fde65;
         align-items: center;
         border-radius: 50px;
-        width: 90%;
-        margin-top: 50%;
+        width: 70%;
+        margin-top: 2%;
         transform: translateX(-50%);
         padding: 15px 15px;
-        left: 49%;
+        left: 63%;
         position: absolute;
     }
 
@@ -958,7 +991,7 @@ footer h1{
         color: white;
         font-weight: bold;
         margin: 0;
-        font-size: 11px;
+        font-size: 18px;
     }
 
 
@@ -979,7 +1012,7 @@ footer h1{
         backdrop-filter: blur(10px);
         box-shadow: 0 0  15px rgba(255, 255, 255, 0.356);
         z-index: 999;
-        width: 100%;
+        width: 320%;
     }
       
       /* Show when active */
