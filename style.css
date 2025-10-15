@@ -695,7 +695,7 @@ footer h1{
         position: fixed;
         top: 0;
         left: 0;
-        width: 350vw;
+        width: 400vw;
         height: 500vh;
         object-fit: cover;
         z-index: -1;
