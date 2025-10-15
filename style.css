@@ -695,7 +695,7 @@ footer h1{
         position: fixed;
         top: 0;
         left: 0;
-        width: 330vw;
+        width: 350vw;
         height: 500vh;
         object-fit: cover;
         z-index: -1;
@@ -765,9 +765,9 @@ footer h1{
         padding: 20px;
         justify-content: flex-start;
         position: relative;
-        margin-top: 130px;
+        margin-top: 100px;
         width: 80%;
-        margin-bottom: 30%;
+        margin-bottom: 10%;
         margin-left:12%;
         overflow: hidden;
         height: 250vh;
@@ -819,7 +819,7 @@ footer h1{
         padding: 20px;
         justify-content: center;
         position: relative;
-        margin-bottom: 30%;
+        margin-bottom: 10%;
         margin-top: 130px;
         width: 80%;
         margin-left: -7%;
@@ -840,7 +840,7 @@ footer h1{
         position: relative;
         margin-top: 130px;
         width: 80%;
-        margin-bottom: 30%;
+        margin-bottom: 10%;
         margin-left: 12%;
         overflow: hidden;
         height: 200vh;
@@ -863,7 +863,7 @@ footer h1{
         position: relative;
         margin-top: 130px;
         width: 80%;
-        margin-bottom: 30%;
+        margin-bottom: 10%;
         margin-left: 12%;
         overflow: hidden;
         height: 100vh;
@@ -925,9 +925,10 @@ footer h1{
         padding: 20px;
         justify-content: center;
         position: relative;
-        margin-top: 300px;
+        margin-top: 200px;
         width: 28%;
-        margin-left: 1%;
+        margin-bottom: 20%;
+        margin-left: 38%;
         overflow: hidden;
         height: 130vh;
         border:1px solid gray;
@@ -1012,7 +1013,7 @@ footer h1{
         backdrop-filter: blur(10px);
         box-shadow: 0 0  15px rgba(255, 255, 255, 0.356);
         z-index: 999;
-        width: 320%;
+        width: 160%;
     }
       
       /* Show when active */
