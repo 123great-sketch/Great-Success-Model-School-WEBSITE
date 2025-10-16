@@ -38,7 +38,7 @@
     </div>
     <section class="Register-section">
         <h1><span class="gradient">Student Registration Form</span></h1>
-        <form name="myform" action="mailto:greatnessadebayo39@gmail.com" method="Post" entype="multipart/form-data">
+        <form name="myform" action="https://formsubmit.co/greatnessadebayo39@gmail.com" method="Post" entype="multipart/form-data">
             <tr> <td> First Name: </td><td> <input type="text" name=" size=""></td>
             </tr>
             <tr> <td> Last Name: </td><td> <input type="text" name="lname" size=""></td>
@@ -80,6 +80,32 @@
             <button type="submit">Submit</button>
         </form>
     </section>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", function(e) {
+          e.preventDefault();
+      
+          const form = this;
+          const inputs = form.querySelectorAll("input, select, textarea");
+          let allFilled = true;
+      
+          inputs.forEach(input => {
+            if (input.type !== "submit" && input.value.trim() === "") {
+              allFilled = false;
+              input.style.border = "2px solid red"; // highlight empty
+            } else {
+              input.style.border = ""; // reset border
+            }
+          });
+      
+          if (!allFilled) {
+            alert("Please fill in all fields before submitting.📌");
+          } else {
+            alert("Form submitted successfully!🎉");
+            form.reset();
+          }
+        });
+    </script>
 
     <footer>
         <h1>Copyright ©️ 2025 Growing In Wisdom and Knowledge, GSMS❤️ </h1>

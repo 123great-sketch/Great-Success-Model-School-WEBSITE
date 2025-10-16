@@ -38,14 +38,39 @@
     </div>
 
     <section class="Notice-Board">
-        <h1>📌 Admission Now Open!</h1>
+        <h1>📌 <span class="gradient">Admission Now Open!</span></h1>
         <p>Click the button below to register for the upcoming academic session</p>
         <button><a href="Register Now.html">Register Now!</a></button>
     </section>
+    
+    <script>
+        document.querySelector("form").addEventListener("submit", function(e) {
+          e.preventDefault();
+      
+          const form = this;
+          const inputs = form.querySelectorAll("input, select, textarea");
+          let allFilled = true;
+      
+          inputs.forEach(input => {
+            if (input.type !== "submit" && input.value.trim() === "") {
+              allFilled = false;
+              input.style.border = "2px solid red"; // highlight empty
+            } else {
+              input.style.border = ""; // reset border
+            }
+          });
+      
+          if (!allFilled) {
+            alert("Please fill in all fields before submitting.");
+          } else {
+            alert("Form submitted successfully!");
+            form.reset();
+          }
+        });
+    </script>
+      
 
-    <footer>
-        <h1>Copyright ©️ 2025 Growing In Wisdom and Knowledge, GSMS❤️ </h1>
-    </footer>
+    
     
 </body>
 </html>
